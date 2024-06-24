@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Loan Application Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+            background-color: #f2f2f2;
+        }
+        h1 {
+            color: darkblue;
+        }
+        form {
+            margin: auto;
+            width: 50%;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        label {
+            display: block;
+            margin: 10px 0;
+            font-weight: bold;
+            color: darkblue;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0 20px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 1em;
+        }
+        input[type="submit"] {
+            width: 40%;
+            padding: 10px;
+            background-color: darkblue;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1em;
+            transition: background-color 0.3s ease;
+        }
+        input[type="submit"]:hover {
+            background-color: #1e90ff;
+        }
+    </style>
+</head>
+<body>
+    <h1>Loan Application Form</h1>
+    <form method="POST" action="/predict">
+        <label for="Gender">Gender:</label>
+        <input type="text" id="Gender" name="Gender" required>
+        
+        <label for="Married">Married:</label>
+        <input type="text" id="Married" name="Married" required>
+        
+        <label for="Dependents">Dependents:</label>
+        <input type="text" id="Dependents" name="Dependents" required>
+        
+        <label for="Education">Education:</label>
+        <input type="text" id="Education" name="Education" required>
+        
+        <label for="Self_Employed">Self Employed:</label>
+        <input type="text" id="Self_Employed" name="Self_Employed" required>
+        
+        <label for="ApplicantIncome">Applicant Income:</label>
+        <input type="text" id="ApplicantIncome" name="ApplicantIncome" required>
+        
+        <label for="CoapplicantIncome">Coapplicant Income:</label>
+        <input type="text" id="CoapplicantIncome" name="CoapplicantIncome" required>
+        
+        <label for="LoanAmount">Loan Amount:</label>
+        <input type="text" id="LoanAmount" name="LoanAmount" required>
+        
+        <label for="Loan_Amount_Term">Loan Amount Term:</label>
+        <input type="text" id="Loan_Amount_Term" name="Loan_Amount_Term" required>
+        
+        <label for="Credit_History">Credit History:</label>
+        <input type="text" id="Credit_History" name="Credit_History" required>
+        
+        <label for="Property_Area">Property Area:</label>
+        <input type="text" id="Property_Area" name="Property_Area" required>
+        
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

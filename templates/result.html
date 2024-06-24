@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Loan Eligibility Result</title>
+    <style>
+        body {
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+        }
+        h1 {
+            color: #333;
+        }
+        .result {
+            font-size: 1.5em;
+            margin-top: 20px;
+            color: darkslateblue;
+        }
+        a {
+            text-decoration: none;
+            color: #fff;
+            background-color: #4CAF50;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin-top: 20px;
+            display: inline-block;
+        }
+        a:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h1>Loan Eligibility Result</h1>
+    <div class="result">
+        {% if prediction == 1 %}
+            Congratulations! You are eligible for the loan.
+        {% else %}
+            Sorry, you are not eligible for the loan.
+        {% endif %}
+    </div>
+    <br><br>
+    <a href="/">Go Back To Home Page</a>
+</body>
+</html>
